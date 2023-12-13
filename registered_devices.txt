@@ -1,0 +1,9 @@
+[
+  {
+    "hostName": "ESPtes1",
+    "firmwareVersion": "1.0.0",
+    "macAddress": "A4:CF:12:D0:85:2A",
+    "wifiSignalStrength": -47,
+    "ipAddress": "192.168.0.123"
+  }
+]
