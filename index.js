@@ -66,22 +66,7 @@ wss.on('connection', (ws) => {
 	});
 });
 
-// Endpoint to handle the "Hello" message from ESP8266
-app.post('/firmwareInitiated', (req, res) => {
-	const message = req.body;
-	const hostName = req.query.hostName; // Extract the hostname from the query parameter
 
-	console.log(`Received "Hello" message from ${hostName}`);
-
-	// Broadcast the "Hello" message with the hostname to all connected clients (HTML pages)
-	wss.clients.forEach((client) => {
-		if (client.readyState === WebSocket.OPEN) {
-			client.send(`Received Firmware OTA by ${hostName}`);
-		}
-	});
-
-	res.sendStatus(200);
-});
 
 // Create a new endpoint to serve the WebSocket IP and port dynamically
 app.get('/getWebSocketAddress', (req, res) => {

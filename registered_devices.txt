@@ -5,5 +5,12 @@
     "macAddress": "A4:CF:12:D0:85:2A",
     "wifiSignalStrength": -47,
     "ipAddress": "192.168.0.123"
+  },
+  {
+    "hostName": "SP2006",
+    "firmwareVersion": "1.0.2",
+    "macAddress": "A4:CF:12:D0:85:2A",
+    "wifiSignalStrength": -49,
+    "ipAddress": "192.168.0.100"
   }
 ]
